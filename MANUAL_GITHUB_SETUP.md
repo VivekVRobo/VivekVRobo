@@ -113,13 +113,12 @@ The automation connection can read releases but cannot create release pages or v
 
 ### Aurelia-Chan-Source
 
-Release preparation is already complete in the repository: package metadata is `0.6.0`, the README/readiness docs are aligned, and the release candidate passed the four validation jobs plus deterministic cognitive-cycle evidence before merge.
+Release preparation is complete: package metadata is `0.6.0`, the README/readiness docs are aligned, the release candidate passed all four validation jobs plus deterministic cognitive-cycle evidence, and the post-merge `main` validation run also passed on commit `faa8f476fb5e23cc3df3fd7fd34dd1563c3ba2ed`.
 
 - Tag: `v0.6.0`
 - Title: `v0.6.0 — Deterministic Cognitive Runtime Evidence Release`
 - Copy/adapt: `docs/RELEASE_NOTES_DRAFT.md`
 - Check first: `docs/RELEASE_READINESS.md`
-- Before clicking Publish, confirm the post-merge `main` validation run is green on the exact commit selected for the tag.
 
 ## 5. Visual proof policy
 
