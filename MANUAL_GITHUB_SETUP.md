@@ -87,9 +87,12 @@ The intended portfolio narrative is:
 
 The automation connection can read releases but cannot create release pages or version tags. Copy-ready release-note drafts and release gates are already committed in each repository.
 
+The commit SHA listed for each project is the exact release target whose current validation was verified. If you create the releases after additional commits land on `main`, tag these exact SHAs rather than silently moving the first release to an unverified later commit.
+
 ### slam-robot-ros2
 
 - Tag: `v0.1.0`
+- Verified target: `290942224293000ed6f2964b4b81727802b6e8f8`
 - Title: `v0.1.0 — Reproducible ROS 2 SLAM Engineering Reference`
 - Copy/adapt: `docs/RELEASE_NOTES_DRAFT.md`
 - Check first: `docs/RELEASE_READINESS.md`
@@ -98,6 +101,7 @@ The automation connection can read releases but cannot create release pages or v
 ### robotic-character-interface
 
 - Tag: `v0.1.0`
+- Verified target: `76d87968e69bdba9c28ab10bbe3fde0acc8c91a1`
 - Title: `v0.1.0 — Safety-Governed Robotic Character Interface (Simulation Release)`
 - Copy/adapt: `docs/RELEASE_NOTES_DRAFT.md`
 - Check first: `docs/RELEASE_CHECKLIST.md`
@@ -106,6 +110,7 @@ The automation connection can read releases but cannot create release pages or v
 ### http-server-from-scratch
 
 - Tag: `v0.1.0`
+- Verified target: `4d79f3cbeb1586cae1edea4f047b025d8c01605f`
 - Title: `v0.1.0 — C++20 HTTP/1.1 Server Engineering Reference`
 - Copy/adapt: `docs/RELEASE_NOTES_DRAFT.md`
 - Check first: `docs/RELEASE_READINESS.md`
@@ -113,9 +118,10 @@ The automation connection can read releases but cannot create release pages or v
 
 ### Aurelia-Chan-Source
 
-Release preparation is complete: package metadata is `0.6.0`, the README/readiness docs are aligned, the release candidate passed all four validation jobs plus deterministic cognitive-cycle evidence, and the post-merge `main` validation run also passed on commit `faa8f476fb5e23cc3df3fd7fd34dd1563c3ba2ed`.
+Release preparation is complete: package metadata is `0.6.0`, the README/readiness docs are aligned, the release candidate passed all four validation jobs plus deterministic cognitive-cycle evidence, and the post-merge `main` validation run also passed.
 
 - Tag: `v0.6.0`
+- Verified target: `faa8f476fb5e23cc3df3fd7fd34dd1563c3ba2ed`
 - Title: `v0.6.0 — Deterministic Cognitive Runtime Evidence Release`
 - Copy/adapt: `docs/RELEASE_NOTES_DRAFT.md`
 - Check first: `docs/RELEASE_READINESS.md`
