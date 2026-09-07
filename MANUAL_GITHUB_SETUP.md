@@ -85,7 +85,7 @@ The intended portfolio narrative is:
 
 ## 4. Create first GitHub Releases
 
-The automation connection can read releases but cannot create them. Release-note drafts are already committed in each repo.
+The automation connection can read releases but cannot create release pages or version tags. Copy-ready release-note drafts and release gates are already committed in each repository.
 
 ### slam-robot-ros2
 
@@ -113,17 +113,13 @@ The automation connection can read releases but cannot create them. Release-note
 
 ### Aurelia-Chan-Source
 
-Do not tag immediately while package metadata still says `0.6.0.dev0`.
+Release preparation is already complete in the repository: package metadata is `0.6.0`, the README/readiness docs are aligned, and the release candidate passed the four validation jobs plus deterministic cognitive-cycle evidence before merge.
 
-Before release:
-
-1. change package version to `0.6.0` in the authoritative package metadata;
-2. rerun all four validation jobs on that exact commit;
-3. verify the deterministic five-run evidence artifact;
-4. then create tag `v0.6.0`;
-5. title it `v0.6.0 — Deterministic Cognitive Runtime Evidence Release`;
-6. copy/adapt `docs/RELEASE_NOTES_DRAFT.md`;
-7. use `docs/RELEASE_READINESS.md` as the gate.
+- Tag: `v0.6.0`
+- Title: `v0.6.0 — Deterministic Cognitive Runtime Evidence Release`
+- Copy/adapt: `docs/RELEASE_NOTES_DRAFT.md`
+- Check first: `docs/RELEASE_READINESS.md`
+- Before clicking Publish, confirm the post-merge `main` validation run is green on the exact commit selected for the tag.
 
 ## 5. Visual proof policy
 
@@ -149,5 +145,5 @@ This UI phase is complete when:
 - [ ] SLAM `v0.1.0` release exists;
 - [ ] RCI `v0.1.0` release exists;
 - [ ] vhttp `v0.1.0` release exists;
-- [ ] Aurelia package version is promoted and `v0.6.0` exists;
+- [ ] Aurelia `v0.6.0` release exists;
 - [ ] no unsupported hardware/performance/AGI claims were introduced while doing so.
