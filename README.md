@@ -8,6 +8,8 @@ I build **measurable robotics and engineering systems** across SLAM, robot contr
 
 My projects emphasize **reproducibility, deterministic testing, explicit safety boundaries, and a strict separation between software/simulation evidence and physical hardware validation**.
 
+**Live portfolio:** [vivek-vala-portfolio.vercel.app](https://vivek-vala-portfolio.vercel.app/)
+
 </div>
 
 ---
