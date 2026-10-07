@@ -1,67 +1,51 @@
+<p align="center">
+  <img src="./assets/profile-hero.svg" alt="Vivek Vala | Robotics, Autonomous Systems and Embedded Intelligence" width="100%" />
+</p>
+
 <div align="center">
 
-# Vivek Vala
+### Robotics · Autonomous Systems · Embedded Systems · Systems Engineering
 
-### Robotics & Autonomous Systems · Embedded Systems · Systems Engineering
+I build physical robots, autonomy software, embedded control systems, and low level software with an emphasis on measurable results, reproducibility, and explicit engineering evidence.
 
-I build **physical robots, autonomy software, embedded control systems, and low-level software** with an emphasis on measurable results, reproducibility, and explicit evidence.
-
-[**Portfolio**](https://vivek-vala-portfolio.vercel.app/) · [**Physical robotic arm**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm) · [**ROS 2 / SLAM**](https://github.com/VivekVRobo/slam-robot-ros2)
+[**Portfolio**](https://vivek-vala-portfolio.vercel.app/) ·
+[**Projects**](https://github.com/VivekVRobo?tab=repositories) ·
+[**Open Source**](https://github.com/manankharwar/fusioncore/pull/96)
 
 </div>
 
 ---
 
-## Recruiter quick scan
-
-| Area | Evidence |
-| --- | --- |
-| **Physical robotics** | Wearable MPU6050 + nRF24L01 gesture control driving a real multi-joint robotic arm; physical actuation video and bench evidence published |
-| **ROS 2 / autonomy** | Reproducibility-first SLAM stack with Gazebo ground truth, ATE/RPE tooling, loop-closure evaluation and rosbag regression; runtime benchmark evidence is still gated |
-| **Embedded / controls** | Arduino, PCA9685, servo control, watchdogs, kinematics, calibration tooling, motor-control and PCB work |
-| **Systems programming** | C++20 HTTP/1.1 server from raw sockets with secure static files, bounded concurrency and Linux `epoll` runtime |
-| **Open source** | [FusionCore PR #96](https://github.com/manankharwar/fusioncore/pull/96) merged upstream: fixed GNSS TF/frame validation and added focused tests |
-
----
-
-## Start here
+## What I build
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
-### 🤖 Gesture-Controlled Robotic Arm
-**Best physical-hardware proof**
+### 🤖 Physical Robotics
 
-Wearable MPU6050 gesture control over nRF24L01 driving a multi-joint robotic arm with real actuation evidence.
-
-**Stack:** Arduino · C++ · MPU6050 · nRF24L01 · PCA9685
-
-[Repository →](https://github.com/VivekVRobo/gesture-controlled-robotic-arm)
+Real robotic systems across gesture control, servo actuation, kinematics, calibration, sensing, and embedded control.
 
 </td>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
-### 🗺️ ROS 2 SLAM Benchmarking
-**Autonomy & localization**
+### 🗺️ Autonomy
 
-2D LiDAR SLAM stack designed around simulator ground truth, trajectory metrics, loop-closure measurement and reproducible evidence.
-
-**Stack:** ROS 2 · Gazebo · LiDAR · Python · SLAM Toolbox
-
-[Repository →](https://github.com/VivekVRobo/slam-robot-ros2)
+ROS 2 SLAM and navigation workflows built around ground truth, trajectory evaluation, repeatability, and reproducible runtime evidence.
 
 </td>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
-### 🌐 HTTP Server From Scratch
-**Systems engineering**
+### 🧠 Intelligent Systems
 
-C++20 HTTP/1.1 server built from raw sockets with parser, routing, secure static files, bounded thread-pool concurrency and Linux `epoll`.
+Local first autonomous execution with planning, authority control, durable missions, recovery, and verification.
 
-**Stack:** C++20 · sockets · HTTP/1.1 · epoll · CMake · CI
+</td>
+<td width="25%" valign="top">
 
-[Repository →](https://github.com/VivekVRobo/http-server-from-scratch)
+### ⚙️ Systems Engineering
+
+C++, networking, concurrency, CI, embedded systems, robotics infrastructure, and evidence driven software engineering.
 
 </td>
 </tr>
@@ -69,78 +53,178 @@ C++20 HTTP/1.1 server built from raw sockets with parser, routing, secure static
 
 ---
 
-## Selected engineering work
+# Featured Engineering
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+## 🤖 Gesture Controlled Robotic Arm
+
+**Physical hardware proof**
+
+Wearable MPU6050 gesture control over nRF24L01 driving a real multi joint robotic arm through Arduino and PCA9685 servo control.
+
+**Stack**
+
+`Arduino` · `C++` · `MPU6050` · `nRF24L01` · `PCA9685`
+
+**Evidence**
+
+Real physical actuation and bench evidence are published with the project.
+
+[**Explore project →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm)
+
+</td>
+<td width="33%" valign="top">
+
+## 🗺️ ROS 2 SLAM
+
+**Localization and reproducible autonomy**
+
+A ROS 2 SLAM stack designed around simulator ground truth, trajectory metrics, loop closure measurement, rosbag regression, and reproducible evidence.
+
+**Stack**
+
+`ROS 2` · `Gazebo` · `LiDAR` · `Python` · `SLAM Toolbox`
+
+**Evidence**
+
+Static contracts and ROS build validation are verified. The full end to end runtime benchmark remains an active proof target.
+
+[**Explore project →**](https://github.com/VivekVRobo/slam-robot-ros2)
+
+</td>
+<td width="33%" valign="top">
+
+## 🧠 Universal Brain
+
+**Autonomous systems architecture**
+
+A local first executive runtime where planning, tool access, authority, durable state, recovery, and verification are explicit system concerns.
+
+**Stack**
+
+`Planning` · `Task DAGs` · `Authority` · `Recovery` · `Verification`
+
+**Evidence**
+
+Architecture and automated engineering checkpoints are verified. Real environment endurance evidence is still in progress.
+
+[**Explore project →**](https://github.com/VivekVRobo/universal-brain)
+
+</td>
+</tr>
+</table>
+
+---
+
+# Engineering Evidence
+
+I try to keep every technical claim at the same level as the evidence behind it.
+
+| System | Current evidence | Status |
+| --- | --- | :---: |
+| **Gesture Controlled Robotic Arm** | Real physical actuation and bench evidence | ✅ Verified |
+| **ROS 2 SLAM stack** | Build, regression, trajectory evaluation, loop closure and evidence infrastructure | ✅ Verified |
+| **ROS 2 runtime benchmark** | End to end Gazebo ground truth ATE and RPE bundle | ◐ In progress |
+| **3 DOF Robotic Arm** | Analytic FK and IK, Cartesian planning, servo mapping and numerical validation | ✅ Verified |
+| **3 DOF physical accuracy** | Repeated measured endpoint accuracy and repeatability | ◐ Pending |
+| **Custom PCB Motor Driver** | KiCad design, current analysis and thermal engineering work | ✅ Design evidence |
+| **PCB hardware validation** | Fabrication and instrumented bench testing | ◐ Pending |
+| **HTTP Server From Scratch** | Linux and Windows CI, parser, routing and bounded concurrency | ✅ Verified |
+| **Universal Brain** | Architecture, automated tests and engineering checkpoints | ✅ Verified |
+| **Universal Brain endurance** | Long duration real environment operational evidence | ◐ In progress |
+
+---
+
+# Open Source
+
+## FusionCore · Merged Upstream ✅
+
+### [PR #96 · GNSS TF and frame validation](https://github.com/manankharwar/fusioncore/pull/96)
+
+This contribution fixed false GNSS TF warnings caused by assuming a hard coded frame, improved configurable and message derived frame resolution, updated lever arm lookup behavior, and added focused regression coverage.
+
+The work was reviewed and merged upstream, making it the strongest external validation on this profile today.
+
+| # | Project | Contribution | Status |
+| :---: | --- | --- | :---: |
+| **01** | FusionCore | GNSS TF and frame validation | **MERGED** |
+
+More entries will be added only when contributions are genuinely accepted upstream.
+
+---
+
+# More Engineering Work
 
 | Project | Engineering focus | Current evidence |
 | --- | --- | --- |
-| **[gesture-controlled-robotic-arm](https://github.com/VivekVRobo/gesture-controlled-robotic-arm)** | Wireless wearable control, sensor fusion, RF telemetry, servo actuation | **Physical hardware demo + bench evidence published** |
-| **[slam-robot-ros2](https://github.com/VivekVRobo/slam-robot-ros2)** | ROS 2 SLAM, Gazebo ground truth, ATE/RPE, loop closure, rosbag regression | Static contracts + ROS build CI verified; runtime benchmark still pending |
-| **[3dof-robotic-arm](https://github.com/VivekVRobo/3dof-robotic-arm)** | Analytic FK/IK, Cartesian planning, servo mapping, validation tooling | Numerical/software validation complete; physical endpoint accuracy pending |
-| **[custom-pcb-motor-driver](https://github.com/VivekVRobo/custom-pcb-motor-driver)** | DRV8848 motor-driver design, current/thermal modeling, KiCad workflow | Engineering/CAD evidence available; fabrication and bench validation pending |
-| **[http-server-from-scratch](https://github.com/VivekVRobo/http-server-from-scratch)** | Raw sockets, HTTP parsing, secure static files, bounded concurrency, `epoll` | Linux + Windows CI verified; controlled performance results pending |
-| **[universal-brain](https://github.com/VivekVRobo/universal-brain)** | Local-first executive runtime, permissions, durable missions, recovery, verification | Engineering checkpoints verified; real-environment endurance evidence in progress |
+| **[3dof robotic arm](https://github.com/VivekVRobo/3dof-robotic-arm)** | Analytic FK and IK, Cartesian planning, servo mapping, validation tooling | Numerical validation complete, physical endpoint accuracy pending |
+| **[custom pcb motor driver](https://github.com/VivekVRobo/custom-pcb-motor-driver)** | DRV8848 motor driver design, current and thermal modelling, KiCad workflow | Engineering and CAD evidence available, fabrication pending |
+| **[http server from scratch](https://github.com/VivekVRobo/http-server-from-scratch)** | C++20 raw sockets, HTTP parsing, secure static files, bounded concurrency, Linux epoll | Linux and Windows CI verified, controlled performance study pending |
+| **[line following robot](https://github.com/VivekVRobo/line-following-robot)** | PID control, deterministic simulation, telemetry, robustness evaluation | Software evaluation tooling available |
+| **[cv object sorter](https://github.com/VivekVRobo/cv-object-sorter)** | OpenCV perception to decision to actuation pipeline | Deterministic software evaluation tooling available |
 
 ---
 
-## Open-source contribution
+# Engineering Stack
 
-### FusionCore — merged upstream
+**Robotics and autonomy**  
+`ROS 2` · `Gazebo` · `SLAM` · `TF` · `Localization` · `Navigation` · `Kinematics` · `Trajectory Evaluation`
 
-[**PR #96: fix GNSS TF validation using the configured or message frame**](https://github.com/manankharwar/fusioncore/pull/96)
+**Embedded systems and controls**  
+`C` · `C++` · `Arduino` · `PCA9685` · `Sensors` · `Serial Protocols` · `Servo Control` · `Motor Control` · `Watchdogs`
 
-- fixed false GNSS TF warnings caused by assuming a hard-coded `gnss_link` frame;
-- added configurable/message-derived GNSS frame resolution;
-- updated lever-arm lookup behavior;
-- added focused unit coverage;
-- merged into the upstream repository.
+**Perception and electronics**  
+`OpenCV` · `MediaPipe` · `LiDAR` · `Calibration` · `KiCad` · `Motor Drivers` · `Current Modelling` · `Thermal Modelling`
 
-This is the strongest external validation on the profile today because the work was reviewed and accepted outside my own repositories.
+**Systems and software**  
+`C++20` · `Linux` · `Raw Sockets` · `HTTP/1.1` · `epoll` · `Concurrency` · `CMake` · `Python` · `GitHub Actions` · `CI`
 
----
-
-## Supporting robotics projects
-
-- **[line-following-robot](https://github.com/VivekVRobo/line-following-robot)** — control stack, PID behavior, deterministic simulation, telemetry and robustness sweeps.
-- **[cv-object-sorter](https://github.com/VivekVRobo/cv-object-sorter)** — OpenCV perception → decision → actuation pipeline with deterministic software evaluation tooling.
-- **[gesture-controlled-robot](https://github.com/VivekVRobo/gesture-controlled-robot)** — MediaPipe-based mobile-robot command stack with temporal stabilization, immediate STOP behavior and watchdog protection.
+**Intelligent systems**  
+`Local Models` · `Agent Systems` · `Tool Execution` · `Persistent State` · `Verification` · `Recovery`
 
 ---
 
-## Engineering stack
+# Engineering Principles
 
-**Robotics:** ROS 2 · SLAM · Gazebo · TF · localization · kinematics · trajectory evaluation  
-**Embedded:** Arduino · C/C++ · PCA9685 · serial protocols · watchdogs · servo/motor control  
-**Vision:** OpenCV · MediaPipe · HSV/contour pipelines · evaluation tooling  
-**Electronics:** KiCad · motor drivers · current/thermal modeling · PCB workflow  
-**Systems:** C++20 · raw sockets · HTTP/1.1 · Linux `epoll` · concurrency · benchmarking  
-**Software:** Python · FastAPI · Flask · SQLite · React · TypeScript · automated testing  
-**Workflow:** Git · GitHub Actions · CI · reproducible runbooks · machine-readable evidence
+### Evidence before claims
 
----
+Simulation stays simulation. Software validation is not physical validation. Physical claims require physical measurements or direct hardware evidence.
 
-## Evidence policy
+### Reproducibility
 
-I try to keep claims at the same level as the evidence:
+Important experiments should preserve the commit, environment, configuration, inputs, raw artifacts, metrics, and failure cases needed to reconstruct what happened.
 
-- **simulation stays simulation;**
-- **software validation is not hardware validation;**
-- **physical claims require physical measurements or direct hardware evidence;**
-- important experiments should preserve the commit, environment, configuration, raw artifacts, metrics and failure cases.
+### Safety and authority
+
+Autonomous execution should have explicit boundaries around what a system may do, what requires approval, what can be reversed, and how failures are recovered.
+
+### Failure visibility
+
+A failed experiment is useful engineering evidence when the conditions, observations, and failure mode are preserved clearly.
 
 ---
 
-## Current proof priorities
+# Current Proof Priorities
 
-1. publish a genuine end-to-end Gazebo SLAM benchmark bundle;
-2. measure real endpoint accuracy and repeatability on the 3-DOF arm;
-3. fabricate and bench-test the motor-driver PCB;
-4. publish controlled performance results for the C++ HTTP server;
-5. continue contributing scoped fixes to external robotics/software projects.
+1. Publish a genuine end to end Gazebo SLAM benchmark bundle with ground truth, estimated trajectory, ATE, RPE, loop closure evidence, configuration, and reproducible artifacts.
+2. Measure real endpoint accuracy and repeatability on the 3 DOF robotic arm.
+3. Fabricate and bench test the motor driver PCB.
+4. Publish controlled performance measurements for the C++ HTTP server.
+5. Continue contributing focused fixes and tests to external robotics and software projects.
 
 ---
 
-## Contact / collaboration
+<div align="center">
 
-I am interested in **robotics, autonomous systems, ROS 2, embedded systems, computer vision, controls, and systems engineering** work where implementation can be backed by reproducible evidence.
+## Build · Measure · Verify · Improve
 
-[**Portfolio**](https://vivek-vala-portfolio.vercel.app/) · [**GitHub**](https://github.com/VivekVRobo)
+I am interested in robotics, autonomous systems, ROS 2, embedded systems, computer vision, controls, physical AI, and systems engineering work where implementation can be backed by reproducible evidence.
+
+[**Portfolio**](https://vivek-vala-portfolio.vercel.app/) ·
+[**GitHub Projects**](https://github.com/VivekVRobo?tab=repositories) ·
+[**FusionCore Contribution**](https://github.com/manankharwar/fusioncore/pull/96)
+
+</div>
