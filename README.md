@@ -158,15 +158,13 @@ Authority, recovery, verification, durable execution, and evidence based complet
 
 ---
 
-## Building / Research / Collaboration
+## Connect
 
-I am interested in work across `Robotics`, `ROS 2`, `Autonomy`, `Embedded Systems`, `Controls`, `Computer Vision`, `Physical AI`, and `Systems Engineering`.
+Open to serious work in robotics, autonomous systems, embedded control, and reliable AI systems.
 
 <p align="center">
-  <a href="https://vivek-vala-portfolio.vercel.app/"><strong>Portfolio</strong></a> ·
-  <a href="https://github.com/VivekVRobo?tab=repositories"><strong>Projects</strong></a> ·
-  <a href="https://github.com/manankharwar/fusioncore/pull/96"><strong>Open Source</strong></a> ·
-  <a href="https://vivek-vala-portfolio.vercel.app/#contact"><strong>Contact</strong></a>
+  <a href="https://vivek-vala-portfolio.vercel.app/#contact"><strong>Contact</strong></a> ·
+  <a href="https://github.com/VivekVRobo"><strong>GitHub</strong></a>
 </p>
 
 <p align="center"><strong>Build · Measure · Verify · Improve</strong></p>
