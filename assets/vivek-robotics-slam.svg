@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="620" height="420" viewBox="0 0 620 420" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="350" viewBox="0 20 620 350" role="img" aria-labelledby="title desc">
 <title id="title">Vivek robotics, SLAM and embedded systems</title>
 <desc id="desc">A clean animated vector showing a desktop robotic arm, LiDAR sweep, sparse SLAM map, reference and estimated trajectory, coordinate frame and embedded controller.</desc>
 <style>
@@ -9,7 +9,7 @@
   .sweep{transform-origin:119px 267px;animation:sweep 5s ease-in-out infinite alternate}.traceA{stroke-dasharray:520;stroke-dashoffset:520;animation:draw 5.5s ease-in-out infinite}.traceB{stroke-dasharray:520;stroke-dashoffset:520;animation:draw 5.5s .55s ease-in-out infinite}.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 3.2s ease-in-out infinite}.blink{animation:blink 2.2s steps(2,end) infinite}.cloud{animation:cloud 4.6s ease-in-out infinite alternate}
   @keyframes sweep{from{transform:rotate(-5deg);opacity:.28}to{transform:rotate(7deg);opacity:.68}}@keyframes draw{0%{stroke-dashoffset:520;opacity:.15}35%,78%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:-520;opacity:.2}}@keyframes pulse{0%,100%{transform:scale(1);opacity:.78}50%{transform:scale(1.08);opacity:1}}@keyframes blink{0%,62%{opacity:1}63%,100%{opacity:.3}}@keyframes cloud{from{opacity:.40}to{opacity:.72}}
   @media(prefers-color-scheme:dark){
-    .ink{stroke:#d7dfe6}.muted{stroke:#9ba8b3}.soft{stroke:#56626e}.blue{stroke:#8fb5d5}.blue2{stroke:#9dbed8}
+    .ink{stroke:#e2e8ee}.muted{stroke:#a9b5c0}.soft{stroke:#64727e}.blue{stroke:#9fc1dd}.blue2{stroke:#a9c6e2}
     .arm{fill:#1a2128;stroke:#d7dfe6}.joint{fill:#222b33;stroke:#d7dfe6}.core{fill:#283b4a;stroke:#8fb5d5}.panel{fill:#1a2128;stroke:#9ba8b3}.pt{fill:#9dbed8}.txt{fill:#9ba8b3}
   }
   @media(prefers-reduced-motion:reduce){*{animation:none!important}}
