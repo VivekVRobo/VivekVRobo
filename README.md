@@ -16,35 +16,19 @@ Focused on **SLAM, robotic manipulation, embedded autonomy, and reliable autonom
 
 ---
 
-## Current Focus
+## Current Work
 
-**Universal Brain**  
-Durable autonomous execution, explicit authority, recovery, verification, and local first orchestration.
+**ROS 2 / SLAM**  
+Ground truth benchmarking, trajectory evaluation, loop closure analysis, and reproducible evidence.
 
-**ROS 2 SLAM**  
-Ground truth benchmark pipeline with trajectory evaluation, rosbag regression, loop closure analysis, and evidence gates.
+**Robotic Manipulation**  
+Physical control, calibration, gesture teleoperation, endpoint accuracy, and repeatability.
 
-**Robotic Arm**  
-Physical control, calibration, gesture teleoperation, endpoint accuracy, and repeatability validation.
+**Autonomous Systems**  
+Durable execution, explicit authority, recovery, verification, and local first orchestration.
 
 **Open Source**  
-Focused contributions to robotics and software infrastructure where the work can be reviewed and accepted upstream.
-
----
-
-## Engineering Snapshot
-
-**PHYSICAL ROBOTICS**  
-Gesture controlled arm · real actuation evidence
-
-**AUTONOMY**  
-ROS 2 · SLAM · Gazebo · ground truth benchmarking
-
-**EMBEDDED**  
-Arduino · PCA9685 · RF telemetry · motor and servo control
-
-**SYSTEMS**  
-C++ · Linux · networking · agents · verification
+Focused upstream contributions where the work can be reviewed, tested, and accepted.
 
 ---
 
