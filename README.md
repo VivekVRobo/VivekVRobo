@@ -129,25 +129,14 @@ I fixed a real frame mismatch in FusionCore where GNSS validation could assume `
 
 ## Engineering Stack
 
-### Robotics
+| Capability | Evidence based stack |
+| --- | --- |
+| **Robotics & SLAM** | ROS 2 · Gazebo · SLAM Toolbox · LiDAR · TF frames · ATE / RPE · rosbag regression |
+| **Embedded Control** | C++ · Arduino · MPU6050 · nRF24L01 · PCA9685 · servo motion control |
+| **Autonomous Systems** | Python · FastAPI · model routing · durable missions · authority gates · recovery · verification |
+| **Engineering Infrastructure** | Git · CMake · GitHub Actions · automated tests · benchmarking · evidence driven validation |
 
-<img src="https://img.shields.io/badge/ROS_2-425866?style=flat-square&logo=ros&logoColor=white" alt="ROS 2"> <img src="https://img.shields.io/badge/Gazebo-425866?style=flat-square&logo=gazebo&logoColor=white" alt="Gazebo"> <img src="https://img.shields.io/badge/SLAM-425866?style=flat-square" alt="SLAM"> <img src="https://img.shields.io/badge/Nav2-425866?style=flat-square" alt="Nav2"> <img src="https://img.shields.io/badge/MoveIt_2-425866?style=flat-square" alt="MoveIt 2">
-
-### Embedded
-
-<img src="https://img.shields.io/badge/C-425866?style=flat-square&logo=c&logoColor=white" alt="C"> <img src="https://img.shields.io/badge/C++-425866?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/Arduino-425866?style=flat-square&logo=arduino&logoColor=white" alt="Arduino"> <img src="https://img.shields.io/badge/STM32-425866?style=flat-square&logo=stmicroelectronics&logoColor=white" alt="STM32"> <img src="https://img.shields.io/badge/PCA9685-425866?style=flat-square" alt="PCA9685">
-
-### Perception
-
-<img src="https://img.shields.io/badge/OpenCV-425866?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV"> <img src="https://img.shields.io/badge/MediaPipe-425866?style=flat-square" alt="MediaPipe"> <img src="https://img.shields.io/badge/LiDAR-425866?style=flat-square" alt="LiDAR"> <img src="https://img.shields.io/badge/Sensor_Fusion-425866?style=flat-square" alt="Sensor Fusion">
-
-### Systems
-
-<img src="https://img.shields.io/badge/Linux-425866?style=flat-square&logo=linux&logoColor=white" alt="Linux"> <img src="https://img.shields.io/badge/Git-425866?style=flat-square&logo=git&logoColor=white" alt="Git"> <img src="https://img.shields.io/badge/CMake-425866?style=flat-square&logo=cmake&logoColor=white" alt="CMake"> <img src="https://img.shields.io/badge/GitHub_Actions-425866?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions"> <img src="https://img.shields.io/badge/Networking-425866?style=flat-square" alt="Networking">
-
-### Intelligence
-
-<img src="https://img.shields.io/badge/Python-425866?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/Local_LLMs-425866?style=flat-square" alt="Local LLMs"> <img src="https://img.shields.io/badge/Agent_Systems-425866?style=flat-square" alt="Agent Systems"> <img src="https://img.shields.io/badge/Tool_Execution-425866?style=flat-square" alt="Tool Execution">
+The emphasis is on technologies used in implemented systems, not an exhaustive list of tools I have touched.
 
 ---
 
