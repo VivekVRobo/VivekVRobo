@@ -1,17 +1,18 @@
-<p align="center">
-  <img src="./assets/profile-hero.svg" alt="Vivek Vala | Robotics, Autonomous Systems and Embedded Intelligence" width="100%" />
-</p>
+<img align="right" src="./assets/vivek-robotics-slam.svg" width="48%" alt="Animated robotics workspace with robotic arm, LiDAR, SLAM trajectories and embedded control" />
 
-<p align="center">
-  <strong>Building physical robots and autonomous systems where the claims are backed by code, measurements, experiments, and real hardware.</strong>
-</p>
+# Vivek Vala
 
-<p align="center">
-  <a href="https://vivek-vala-portfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-425866?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
-  <a href="https://github.com/VivekVRobo?tab=repositories"><img src="https://img.shields.io/badge/Projects-425866?style=for-the-badge&logo=github&logoColor=white" alt="Projects"></a>
-  <a href="https://github.com/manankharwar/fusioncore/pull/96"><img src="https://img.shields.io/badge/Open_Source-425866?style=for-the-badge&logo=git&logoColor=white" alt="Open Source"></a>
-  <a href="https://vivek-vala-portfolio.vercel.app/#contact"><img src="https://img.shields.io/badge/Contact-425866?style=for-the-badge&logo=minutemailer&logoColor=white" alt="Contact"></a>
-</p>
+### Robotics · Autonomous Systems · Embedded Intelligence
+
+Building physical robots and autonomous systems where claims are backed by **code, measurements, and real hardware**.
+
+Focused on **SLAM, robotic manipulation, embedded autonomy, and reliable autonomous systems**.
+
+**Evidence over hype.**
+
+[**Portfolio**](https://vivek-vala-portfolio.vercel.app/) · [**Contact**](https://vivek-vala-portfolio.vercel.app/#contact) · [**Open Source**](https://github.com/manankharwar/fusioncore/pull/96)
+
+<br clear="right" />
 
 ---
 
