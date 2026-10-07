@@ -1,69 +1,56 @@
-<p align="center">
-  <img src="./assets/profile-hero.svg" alt="Vivek Vala | Robotics, Autonomous Systems and Embedded Intelligence" width="100%" />
-</p>
+<img align="right" src="./assets/vivek-robotics-slam.svg" width="48%" alt="Animated robotics workspace with robotic arm, LiDAR, SLAM trajectories and embedded control" />
 
-<p align="center">
-  <strong>Building physical robots and autonomous systems where the claims are backed by code, measurements, experiments, and real hardware.</strong>
-</p>
+# Vivek Vala
 
-<p align="center">
-  <a href="https://vivek-vala-portfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-425866?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
-  <a href="https://github.com/VivekVRobo?tab=repositories"><img src="https://img.shields.io/badge/Projects-425866?style=for-the-badge&logo=github&logoColor=white" alt="Projects"></a>
-  <a href="https://github.com/manankharwar/fusioncore/pull/96"><img src="https://img.shields.io/badge/Open_Source-425866?style=for-the-badge&logo=git&logoColor=white" alt="Open Source"></a>
-  <a href="https://vivek-vala-portfolio.vercel.app/#contact"><img src="https://img.shields.io/badge/Contact-425866?style=for-the-badge&logo=minutemailer&logoColor=white" alt="Contact"></a>
-</p>
+### Robotics · Autonomous Systems · Embedded Intelligence
+
+Building physical robots and autonomous systems where claims are backed by **code, measurements, and real hardware**.
+
+Focused on **SLAM, robotic manipulation, embedded autonomy, and reliable autonomous systems**.
+
+**Evidence over hype.**
+
+[**Portfolio**](https://vivek-vala-portfolio.vercel.app/) · [**Contact**](https://vivek-vala-portfolio.vercel.app/#contact) · [**Open Source**](https://github.com/manankharwar/fusioncore/pull/96)
+
+<br clear="right" />
 
 ---
 
-## Current Focus
+## Current Work
 
-**Universal Brain**  
-Durable autonomous execution, explicit authority, recovery, verification, and local first orchestration.
+**ROS 2 / SLAM**  
+Ground truth benchmarking, trajectory evaluation, loop closure analysis, and reproducible evidence.
 
-**ROS 2 SLAM**  
-Ground truth benchmark pipeline with trajectory evaluation, rosbag regression, loop closure analysis, and evidence gates.
+**Robotic Manipulation**  
+Physical control, calibration, gesture teleoperation, endpoint accuracy, and repeatability.
 
-**Robotic Arm**  
-Physical control, calibration, gesture teleoperation, endpoint accuracy, and repeatability validation.
+**Autonomous Systems**  
+Durable execution, explicit authority, recovery, verification, and local first orchestration.
 
 **Open Source**  
-Focused contributions to robotics and software infrastructure where the work can be reviewed and accepted upstream.
-
----
-
-## Engineering Snapshot
-
-**PHYSICAL ROBOTICS**  
-Gesture controlled arm · real actuation evidence
-
-**AUTONOMY**  
-ROS 2 · SLAM · Gazebo · ground truth benchmarking
-
-**EMBEDDED**  
-Arduino · PCA9685 · RF telemetry · motor and servo control
-
-**SYSTEMS**  
-C++ · Linux · networking · agents · verification
+Focused upstream contributions where the work can be reviewed, tested, and accepted.
 
 ---
 
 ## Featured Engineering
 
+Three systems, one standard: **implementation, measurable evidence, and explicit proof boundaries.**
+
 ### 01 · Gesture Controlled Robotic Arm
 
 <p align="center">
   <a href="https://github.com/VivekVRobo/gesture-controlled-robotic-arm">
-    <img src="https://raw.githubusercontent.com/VivekVRobo/gesture-controlled-robotic-arm/main/docs/images/arm-and-glove.png" alt="Gesture controlled robotic arm and wearable control glove" width="82%" />
+    <img src="https://raw.githubusercontent.com/VivekVRobo/gesture-controlled-robotic-arm/main/docs/images/arm-and-glove.png" alt="Gesture controlled robotic arm and wearable control glove" width="88%" />
   </a>
 </p>
 
-**Wearable MPU6050 control over nRF24L01 with physical multi joint actuation.**
+**Wearable IMU control over 2.4 GHz RF driving a physical multi joint robotic arm.**
 
-`C++` · `Arduino` · `PCA9685` · `MPU6050` · `nRF24L01`
+`C++` · `Arduino` · `MPU6050` · `nRF24L01` · `PCA9685`
 
-Real physical actuation, bench photography, electronics evidence, and a continuous demonstration are committed in the project.
+**Evidence:** Physical actuation ✅ · Firmware verification ✅ · Latency and repeatability ◐ Pending
 
-[**View project →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm) · [**Watch physical actuation evidence →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/docs/media/physical_actuation_evidence.mp4)
+[**Repository →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm) · [**Actuation video →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/docs/media/physical_actuation_evidence.mp4) · [**Hardware bench →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/docs/images/robotic_arm_hardware_bench.jpg) · [**Verification tests →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/tests/test_firmware_motion_engine.py)
 
 ---
 
@@ -71,17 +58,17 @@ Real physical actuation, bench photography, electronics evidence, and a continuo
 
 <p align="center">
   <a href="https://github.com/VivekVRobo/slam-robot-ros2">
-    <img src="./assets/slam-benchmark-pipeline.svg" alt="ROS 2 SLAM ground truth benchmark pipeline" width="100%" />
+    <img src="./assets/slam-benchmark-pipeline.svg" alt="ROS 2 SLAM ground truth benchmark pipeline" width="88%" />
   </a>
 </p>
 
-**A reproducibility first SLAM stack built to measure estimated motion against simulator ground truth instead of treating a good looking map as sufficient evidence.**
+**A reproducibility first SLAM stack that evaluates estimated motion against independent Gazebo ground truth.**
 
-`ROS 2` · `Gazebo` · `LiDAR` · `SLAM Toolbox` · `ATE` · `RPE` · `Loop Closure`
+`ROS 2` · `Gazebo` · `LiDAR` · `SLAM Toolbox` · `ATE` · `RPE`
 
-The benchmark tooling, ROS package build, trajectory evaluation, and evidence infrastructure are implemented. The end to end runtime benchmark remains explicitly gated until a real evidence bundle passes.
+**Evidence:** Package and CI contracts ✅ · Benchmark tooling ✅ · Published runtime ATE / RPE ◐ Pending
 
-[**View project →**](https://github.com/VivekVRobo/slam-robot-ros2)
+[**Repository →**](https://github.com/VivekVRobo/slam-robot-ros2) · [**Benchmark runbook →**](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/docs/BENCHMARK_EVIDENCE_RUNBOOK.md) · [**Trajectory evaluator →**](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/tools/trajectory_metrics.py) · [**Release gate →**](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/docs/RELEASE_READINESS.md)
 
 ---
 
@@ -89,108 +76,95 @@ The benchmark tooling, ROS package build, trajectory evaluation, and evidence in
 
 <p align="center">
   <a href="https://github.com/VivekVRobo/universal-brain">
-    <img src="./assets/universal-brain-architecture.svg" alt="Universal Brain deterministic control plane architecture" width="100%" />
+    <img src="./assets/universal-brain-architecture.svg" alt="Universal Brain deterministic control plane architecture" width="88%" />
   </a>
 </p>
 
-**A local first autonomous execution system where planning, tool access, authority, durable state, recovery, and verification stay structurally visible.**
+**A local first autonomous execution system that separates model reasoning from persistent authority, state, recovery, and verification.**
 
-`Planning` · `Model Routing` · `Durable Missions` · `Authority Gates` · `Tool Execution` · `Verification`
+`Python` · `Model Routing` · `Durable Missions` · `Authority Gates` · `Verification`
 
-Implemented and tested engineering checkpoints extend through V5.3 validation tooling. Real Windows, WSL2, Ollama pressure, and long duration endurance evidence remain deliberately gated.
+**Evidence:** V5.3 verification record ✅ · Cross platform evidence harness ✅ · Windows / WSL2 target proof ◐ Pending
 
-[**View project →**](https://github.com/VivekVRobo/universal-brain)
+[**Repository →**](https://github.com/VivekVRobo/universal-brain) · [**Architecture →**](https://github.com/VivekVRobo/universal-brain/blob/main/docs/architecture/SYSTEM_ARCHITECTURE.md) · [**Verification record →**](https://github.com/VivekVRobo/universal-brain/blob/main/docs/testing/ENGINEERING_AGENCY_V53_VERIFICATION.md) · [**Threat model →**](https://github.com/VivekVRobo/universal-brain/blob/main/docs/security/THREAT_MODEL.md)
 
 ---
 
-## Evidence Board
+## Proof Ledger
 
-I keep technical claims at the same level as the evidence behind them.
+A compact view of what is **verified now** and what is still explicitly gated.
 
-| System | Evidence | Status |
-| --- | --- | :---: |
-| **Robotic Arm** | Physical actuation and bench evidence | ✅ Verified |
-| **ROS 2 SLAM** | Build, regression and evaluation infrastructure | ✅ Verified |
-| **SLAM runtime benchmark** | Gazebo ground truth ATE / RPE evidence bundle | ◐ In progress |
-| **3DOF IK** | Analytic FK / IK and numerical validation | ✅ Verified |
-| **PCB design** | CAD, electrical and thermal engineering evidence | ✅ Verified |
-| **PCB hardware** | Fabricated bench validation | ◐ Pending |
-| **HTTP Server** | Linux and Windows CI | ✅ Verified |
-| **Universal Brain** | Automated tests and engineering checkpoints | ✅ Verified |
-| **Universal Brain endurance** | Target machine long duration evidence | ◐ In progress |
+| System | Current proof | Boundary |
+| --- | --- | --- |
+| **Robotic Arm** | Physical actuation, hardware bench, firmware tests ✅ | Latency and repeatability still need measurement |
+| **ROS 2 SLAM** | Package contracts, evaluation and benchmark tooling ✅ | Runtime ATE / RPE evidence still pending |
+| **Universal Brain** | V5.3 verification record and cross platform validation harness ✅ | Windows / WSL2 target endurance still pending |
+| **Open Source** | FusionCore PR #96 merged upstream ✅ | New entries only after upstream acceptance |
 
 ---
 
 ## Open Source
 
-### FusionCore · External Contribution · MERGED ✅
+### FusionCore · PR #96 · Merged Upstream ✅
 
-**GNSS TF / frame validation**
+**ROS 2 GNSS frame resolution and TF validation**
 
-✓ corrected frame resolution behavior  
-✓ updated lever arm lookup logic  
-✓ added focused regression coverage  
-✓ reviewed and merged upstream
+I fixed a real frame mismatch in FusionCore where GNSS validation could assume `gnss_link` even when a driver published another frame such as `gps`.
 
-[**View PR #96 →**](https://github.com/manankharwar/fusioncore/pull/96)
+**What changed**
 
-### Upstream Contributions
+- added configurable `gnss.frame_id` support
+- resolved the active GNSS frame as **configured override → message header → `gnss_link` fallback**
+- used the resolved frame for TF validation and NavSatFix lever arm lookup
+- added focused regression coverage for override, message, and fallback precedence
+- kept the change scoped to the reported GNSS frame issue
 
-`01` **FusionCore** · MERGED
+**Upstream result:** merged **September 8, 2026** · 5 files changed · accepted into the original FusionCore repository
 
-Future entries will be added only when they are genuinely accepted upstream.
+[**View merged PR #96 →**](https://github.com/manankharwar/fusioncore/pull/96) · [**Original issue #81 →**](https://github.com/manankharwar/fusioncore/issues/81) · [**FusionCore repository →**](https://github.com/manankharwar/fusioncore)
+
+> Future contributions appear here only after they are accepted upstream.
 
 ---
 
 ## Engineering Stack
 
-### Robotics
+| Capability | Evidence based stack |
+| --- | --- |
+| **Robotics & SLAM** | ROS 2 · Gazebo · SLAM Toolbox · LiDAR · TF frames · ATE / RPE · rosbag regression |
+| **Embedded Control** | C++ · Arduino · MPU6050 · nRF24L01 · PCA9685 · servo motion control |
+| **Autonomous Systems** | Python · FastAPI · model routing · durable missions · authority gates · recovery · verification |
+| **Engineering Infrastructure** | Git · CMake · GitHub Actions · automated tests · benchmarking · evidence driven validation |
 
-<img src="https://img.shields.io/badge/ROS_2-425866?style=flat-square&logo=ros&logoColor=white" alt="ROS 2"> <img src="https://img.shields.io/badge/Gazebo-425866?style=flat-square&logo=gazebo&logoColor=white" alt="Gazebo"> <img src="https://img.shields.io/badge/SLAM-425866?style=flat-square" alt="SLAM"> <img src="https://img.shields.io/badge/Nav2-425866?style=flat-square" alt="Nav2"> <img src="https://img.shields.io/badge/MoveIt_2-425866?style=flat-square" alt="MoveIt 2">
-
-### Embedded
-
-<img src="https://img.shields.io/badge/C-425866?style=flat-square&logo=c&logoColor=white" alt="C"> <img src="https://img.shields.io/badge/C++-425866?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"> <img src="https://img.shields.io/badge/Arduino-425866?style=flat-square&logo=arduino&logoColor=white" alt="Arduino"> <img src="https://img.shields.io/badge/STM32-425866?style=flat-square&logo=stmicroelectronics&logoColor=white" alt="STM32"> <img src="https://img.shields.io/badge/PCA9685-425866?style=flat-square" alt="PCA9685">
-
-### Perception
-
-<img src="https://img.shields.io/badge/OpenCV-425866?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV"> <img src="https://img.shields.io/badge/MediaPipe-425866?style=flat-square" alt="MediaPipe"> <img src="https://img.shields.io/badge/LiDAR-425866?style=flat-square" alt="LiDAR"> <img src="https://img.shields.io/badge/Sensor_Fusion-425866?style=flat-square" alt="Sensor Fusion">
-
-### Systems
-
-<img src="https://img.shields.io/badge/Linux-425866?style=flat-square&logo=linux&logoColor=white" alt="Linux"> <img src="https://img.shields.io/badge/Git-425866?style=flat-square&logo=git&logoColor=white" alt="Git"> <img src="https://img.shields.io/badge/CMake-425866?style=flat-square&logo=cmake&logoColor=white" alt="CMake"> <img src="https://img.shields.io/badge/GitHub_Actions-425866?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions"> <img src="https://img.shields.io/badge/Networking-425866?style=flat-square" alt="Networking">
-
-### Intelligence
-
-<img src="https://img.shields.io/badge/Python-425866?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/Local_LLMs-425866?style=flat-square" alt="Local LLMs"> <img src="https://img.shields.io/badge/Agent_Systems-425866?style=flat-square" alt="Agent Systems"> <img src="https://img.shields.io/badge/Tool_Execution-425866?style=flat-square" alt="Tool Execution">
+The emphasis is on technologies used in implemented systems, not an exhaustive list of tools I have touched.
 
 ---
 
-## Research / Systems Interests
+## Research Directions
 
-`ROS 2` · `SLAM` · `Localization` · `Controls` · `Embedded Robotics` · `Computer Vision` · `Sensor Fusion` · `Physical AI` · `Autonomous Agents` · `Reliable Systems`
+**State Estimation & SLAM**  
+Localization, loop closure, trajectory evaluation, and reproducible benchmarking.
+
+**Robot Manipulation & Control**  
+Calibration, teleoperation, bounded motion, endpoint accuracy, and repeatability.
+
+**Embedded Autonomy**  
+Sensor fusion, RF control, actuator safety, and hardware backed verification.
+
+**Reliable Autonomous Systems**  
+Authority, recovery, verification, durable execution, and evidence based completion.
+
+[**Repositories →**](https://github.com/VivekVRobo?tab=repositories) · [**Contribution history →**](https://github.com/VivekVRobo?tab=overview&from=2026-01-01&to=2026-12-31) · [**Merged FusionCore PR #96 →**](https://github.com/manankharwar/fusioncore/pull/96)
 
 ---
 
-## GitHub Activity
+## Connect
+
+Open to serious work in robotics, autonomous systems, embedded control, and reliable AI systems.
 
 <p align="center">
-  <img src="https://ghchart.rshah.org/6F90A8/VivekVRobo" alt="VivekVRobo GitHub contribution activity" width="92%" />
-</p>
-
-The activity graph is secondary to the engineering evidence above. Projects, accepted upstream work, tests, measurements, and real hardware remain the primary signals.
-
----
-
-## Building / Research / Collaboration
-
-I am interested in work across `Robotics`, `ROS 2`, `Autonomy`, `Embedded Systems`, `Controls`, `Computer Vision`, `Physical AI`, and `Systems Engineering`.
-
-<p align="center">
-  <a href="https://vivek-vala-portfolio.vercel.app/"><strong>Portfolio</strong></a> ·
-  <a href="https://github.com/VivekVRobo?tab=repositories"><strong>Projects</strong></a> ·
-  <a href="https://github.com/manankharwar/fusioncore/pull/96"><strong>Open Source</strong></a> ·
-  <a href="https://vivek-vala-portfolio.vercel.app/#contact"><strong>Contact</strong></a>
+  <a href="https://vivek-vala-portfolio.vercel.app/#contact"><strong>Contact</strong></a> ·
+  <a href="https://github.com/VivekVRobo"><strong>GitHub</strong></a>
 </p>
 
 <p align="center"><strong>Build · Measure · Verify · Improve</strong></p>
