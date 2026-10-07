@@ -34,21 +34,23 @@ Focused upstream contributions where the work can be reviewed, tested, and accep
 
 ## Featured Engineering
 
+Three systems, one standard: **implementation, measurable evidence, and explicit proof boundaries.**
+
 ### 01 · Gesture Controlled Robotic Arm
 
 <p align="center">
   <a href="https://github.com/VivekVRobo/gesture-controlled-robotic-arm">
-    <img src="https://raw.githubusercontent.com/VivekVRobo/gesture-controlled-robotic-arm/main/docs/images/arm-and-glove.png" alt="Gesture controlled robotic arm and wearable control glove" width="82%" />
+    <img src="https://raw.githubusercontent.com/VivekVRobo/gesture-controlled-robotic-arm/main/docs/images/arm-and-glove.png" alt="Gesture controlled robotic arm and wearable control glove" width="88%" />
   </a>
 </p>
 
-**Wearable MPU6050 control over nRF24L01 with physical multi joint actuation.**
+**Wearable IMU control over 2.4 GHz RF driving a physical multi joint robotic arm.**
 
-`C++` · `Arduino` · `PCA9685` · `MPU6050` · `nRF24L01`
+`C++` · `Arduino` · `MPU6050` · `nRF24L01` · `PCA9685`
 
-Real physical actuation, bench photography, electronics evidence, and a continuous demonstration are committed in the project.
+**Evidence:** Physical actuation ✅ · Firmware verification ✅ · Latency and repeatability ◐ Pending
 
-[**View project →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm) · [**Watch physical actuation evidence →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/docs/media/physical_actuation_evidence.mp4)
+[**Repository →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm) · [**Actuation video →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/docs/media/physical_actuation_evidence.mp4) · [**Hardware bench →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/docs/images/robotic_arm_hardware_bench.jpg) · [**Verification tests →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/tests/test_firmware_motion_engine.py)
 
 ---
 
@@ -56,17 +58,17 @@ Real physical actuation, bench photography, electronics evidence, and a continuo
 
 <p align="center">
   <a href="https://github.com/VivekVRobo/slam-robot-ros2">
-    <img src="./assets/slam-benchmark-pipeline.svg" alt="ROS 2 SLAM ground truth benchmark pipeline" width="100%" />
+    <img src="./assets/slam-benchmark-pipeline.svg" alt="ROS 2 SLAM ground truth benchmark pipeline" width="88%" />
   </a>
 </p>
 
-**A reproducibility first SLAM stack built to measure estimated motion against simulator ground truth instead of treating a good looking map as sufficient evidence.**
+**A reproducibility first SLAM stack that evaluates estimated motion against independent Gazebo ground truth.**
 
-`ROS 2` · `Gazebo` · `LiDAR` · `SLAM Toolbox` · `ATE` · `RPE` · `Loop Closure`
+`ROS 2` · `Gazebo` · `LiDAR` · `SLAM Toolbox` · `ATE` · `RPE`
 
-The benchmark tooling, ROS package build, trajectory evaluation, and evidence infrastructure are implemented. The end to end runtime benchmark remains explicitly gated until a real evidence bundle passes.
+**Evidence:** Package and CI contracts ✅ · Benchmark tooling ✅ · Published runtime ATE / RPE ◐ Pending
 
-[**View project →**](https://github.com/VivekVRobo/slam-robot-ros2)
+[**Repository →**](https://github.com/VivekVRobo/slam-robot-ros2) · [**Benchmark runbook →**](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/docs/BENCHMARK_EVIDENCE_RUNBOOK.md) · [**Trajectory evaluator →**](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/tools/trajectory_metrics.py) · [**Release gate →**](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/docs/RELEASE_READINESS.md)
 
 ---
 
@@ -74,17 +76,17 @@ The benchmark tooling, ROS package build, trajectory evaluation, and evidence in
 
 <p align="center">
   <a href="https://github.com/VivekVRobo/universal-brain">
-    <img src="./assets/universal-brain-architecture.svg" alt="Universal Brain deterministic control plane architecture" width="100%" />
+    <img src="./assets/universal-brain-architecture.svg" alt="Universal Brain deterministic control plane architecture" width="88%" />
   </a>
 </p>
 
-**A local first autonomous execution system where planning, tool access, authority, durable state, recovery, and verification stay structurally visible.**
+**A local first autonomous execution system that separates model reasoning from persistent authority, state, recovery, and verification.**
 
-`Planning` · `Model Routing` · `Durable Missions` · `Authority Gates` · `Tool Execution` · `Verification`
+`Python` · `Model Routing` · `Durable Missions` · `Authority Gates` · `Verification`
 
-Implemented and tested engineering checkpoints extend through V5.3 validation tooling. Real Windows, WSL2, Ollama pressure, and long duration endurance evidence remain deliberately gated.
+**Evidence:** V5.3 verification record ✅ · Cross platform evidence harness ✅ · Windows / WSL2 target proof ◐ Pending
 
-[**View project →**](https://github.com/VivekVRobo/universal-brain)
+[**Repository →**](https://github.com/VivekVRobo/universal-brain) · [**Architecture →**](https://github.com/VivekVRobo/universal-brain/blob/main/docs/architecture/SYSTEM_ARCHITECTURE.md) · [**Verification record →**](https://github.com/VivekVRobo/universal-brain/blob/main/docs/testing/ENGINEERING_AGENCY_V53_VERIFICATION.md) · [**Threat model →**](https://github.com/VivekVRobo/universal-brain/blob/main/docs/security/THREAT_MODEL.md)
 
 ---
 
