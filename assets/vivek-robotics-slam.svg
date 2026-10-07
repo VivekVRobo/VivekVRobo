@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="420" viewBox="0 0 620 420" role="img" aria-labelledby="title desc">
+<title id="title">Vivek robotics, SLAM and embedded systems</title>
+<desc id="desc">A clean animated vector showing a desktop robotic arm, LiDAR sweep, sparse SLAM map, reference and estimated trajectory, coordinate frame and embedded controller.</desc>
+<style>
+  .ink{stroke:#34424f}.muted{stroke:#7d8994}.soft{stroke:#c8d0d7}.blue{stroke:#7298b9}.blue2{stroke:#9bb7cf}
+  .arm{fill:#f5f1e9;stroke:#34424f;stroke-width:1.7}.joint{fill:#eef2f4;stroke:#34424f;stroke-width:1.5}.core{fill:#d8e4ed;stroke:#7298b9;stroke-width:1.4}
+  .panel{fill:#f5f1e9;stroke:#7d8994;stroke-width:1.1}.pt{fill:#86a9c7}.r{stroke-linecap:round;stroke-linejoin:round}.nf{fill:none}
+  .txt{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:9px;fill:#7d8994}
+  .sweep{transform-origin:119px 267px;animation:sweep 5s ease-in-out infinite alternate}.traceA{stroke-dasharray:520;stroke-dashoffset:520;animation:draw 5.5s ease-in-out infinite}.traceB{stroke-dasharray:520;stroke-dashoffset:520;animation:draw 5.5s .55s ease-in-out infinite}.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 3.2s ease-in-out infinite}.blink{animation:blink 2.2s steps(2,end) infinite}.cloud{animation:cloud 4.6s ease-in-out infinite alternate}
+  @keyframes sweep{from{transform:rotate(-5deg);opacity:.28}to{transform:rotate(7deg);opacity:.68}}@keyframes draw{0%{stroke-dashoffset:520;opacity:.15}35%,78%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:-520;opacity:.2}}@keyframes pulse{0%,100%{transform:scale(1);opacity:.78}50%{transform:scale(1.08);opacity:1}}@keyframes blink{0%,62%{opacity:1}63%,100%{opacity:.3}}@keyframes cloud{from{opacity:.40}to{opacity:.72}}
+  @media(prefers-color-scheme:dark){
+    .ink{stroke:#d7dfe6}.muted{stroke:#9ba8b3}.soft{stroke:#56626e}.blue{stroke:#8fb5d5}.blue2{stroke:#9dbed8}
+    .arm{fill:#1a2128;stroke:#d7dfe6}.joint{fill:#222b33;stroke:#d7dfe6}.core{fill:#283b4a;stroke:#8fb5d5}.panel{fill:#1a2128;stroke:#9ba8b3}.pt{fill:#9dbed8}.txt{fill:#9ba8b3}
+  }
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+
+<g class="soft nf r" stroke-width="1" opacity=".42">
+  <path d="M206 118H548"/><path d="M188 260H548"/>
+  <path d="M255 86V292"/><path d="M493 86V292"/>
+</g>
+
+<g class="pt cloud">
+  <circle cx="218" cy="96" r="1"/><circle cx="239" cy="131" r=".9"/><circle cx="273" cy="104" r=".8"/><circle cx="302" cy="144" r="1"/><circle cx="331" cy="91" r=".8"/><circle cx="352" cy="126" r="1.1"/><circle cx="395" cy="102" r=".9"/><circle cx="425" cy="138" r="1"/><circle cx="459" cy="96" r=".8"/><circle cx="505" cy="127" r="1"/><circle cx="535" cy="101" r=".9"/>
+  <circle cx="208" cy="169" r=".8"/><circle cx="236" cy="202" r="1"/><circle cx="268" cy="173" r=".9"/><circle cx="296" cy="225" r=".8"/><circle cx="326" cy="195" r="1"/><circle cx="352" cy="236" r=".8"/><circle cx="391" cy="179" r="1"/><circle cx="418" cy="218" r=".9"/><circle cx="452" cy="190" r="1"/><circle cx="493" cy="228" r=".8"/><circle cx="523" cy="191" r="1"/>
+  <circle cx="225" cy="273" r=".8"/><circle cx="266" cy="286" r="1"/><circle cx="314" cy="269" r=".8"/><circle cx="355" cy="281" r="1"/><circle cx="405" cy="268" r=".8"/><circle cx="452" cy="286" r="1"/><circle cx="503" cy="270" r=".9"/>
+</g>
+
+<g class="r">
+  <path d="M119 282V320M106 320H132" class="ink" stroke-width="1.7"/>
+  <rect x="103" y="250" width="32" height="27" rx="4" class="panel"/>
+  <circle cx="119" cy="263.5" r="7" fill="none" class="blue" stroke-width="1.6"/>
+  <circle cx="119" cy="263.5" r="2.2" fill="#7298b9"/>
+</g>
+<g class="sweep blue2 nf r" stroke-width="1" opacity=".6">
+  <path d="M119 264Q161 227 220 229"/><path d="M119 264Q171 244 235 248"/><path d="M119 264Q176 261 242 268"/><path d="M119 264Q169 278 231 293"/>
+</g>
+
+<g class="nf r">
+  <path class="traceA muted" d="M198 224C220 164 271 126 329 127C383 128 411 162 449 154C489 145 510 111 542 116C565 120 576 141 567 160C554 187 514 199 478 191C438 181 410 152 366 156C315 161 277 204 235 236" stroke-width="1.25" stroke-dasharray="6 6"/>
+  <path class="traceB blue" d="M201 226C223 169 272 132 329 133C379 134 411 168 450 160C487 152 510 118 541 122C561 125 571 143 563 159C550 182 513 194 479 186C441 177 411 148 365 152C317 157 278 199 238 232" stroke-width="2"/>
+</g>
+
+<g class="r">
+  <ellipse cx="438" cy="327" rx="47" ry="10" class="arm"/>
+  <path d="M407 319V292Q407 284 415 282H461Q469 284 469 292V319" class="arm"/>
+  <ellipse cx="438" cy="284" rx="31" ry="7.8" class="joint"/>
+
+  <path d="M422 283C420 260 421 239 426 220C431 201 446 192 459 198C471 204 474 217 467 232C458 250 454 267 454 283Z" class="arm"/>
+  <circle cx="451" cy="210" r="15" class="joint"/><circle cx="451" cy="210" r="8.2" class="core pulse"/>
+
+  <path d="M442 200L393 158Q383 150 372 157L359 169Q351 177 360 185L414 222Z" class="arm"/>
+  <circle cx="376" cy="171" r="14.5" class="joint"/><circle cx="376" cy="171" r="7.8" class="core pulse"/>
+
+  <path d="M364 163L324 185Q313 191 316 204L320 217Q323 227 334 221L385 183Z" class="arm"/>
+  <circle cx="326" cy="205" r="12.5" class="joint"/><circle cx="326" cy="205" r="6.2" class="core pulse"/>
+
+  <path d="M318 211L301 220" class="ink" stroke-width="6.5"/>
+  <rect x="289" y="214" width="17" height="21" rx="4" fill="#dfe5e9" stroke="#34424f" stroke-width="1.4" transform="rotate(58 297.5 224.5)"/>
+  <path d="M289 230L278 243M298 235L291 250" class="ink" stroke-width="2.6"/>
+  <circle cx="278" cy="243" r="2" fill="#7298b9" class="blink"/><circle cx="291" cy="250" r="2" fill="#7298b9" class="blink"/>
+</g>
+
+<g transform="translate(508 302)" class="r" opacity=".82">
+  <rect width="52" height="29" rx="4" class="panel"/>
+  <rect x="7" y="7" width="15" height="12" rx="2" fill="none" stroke="#6f917f" stroke-width="1.2"/>
+  <path d="M28 8H44M28 14H45M28 20H40" class="soft" stroke-width="2.6"/>
+  <circle cx="10" cy="24" r="1.6" fill="#6f917f" class="blink"/><circle cx="16" cy="24" r="1.6" fill="#86a9c7" class="blink"/>
+</g>
+
+<g transform="translate(550 91)" class="r">
+  <circle r="2.4" fill="#65727d"/>
+  <path d="M0 0V-25" stroke="#7298b9" stroke-width="1.7"/><path d="M0 0L20-11" stroke="#6f917f" stroke-width="1.7"/><path d="M0 0L19 10" stroke="#a16f69" stroke-width="1.7"/>
+  <path d="M0-25l-3.2 6.5h6.4z" fill="#7298b9"/><path d="M20-11l-6.5.8 3 4.7z" fill="#6f917f"/><path d="M19 10l-6.3-3.8-1.6 5.6z" fill="#a16f69"/>
+  <text x="5" y="-25" class="txt">Z</text><text x="22" y="-10" class="txt">Y</text><text x="21" y="16" class="txt">X</text>
+</g>
+
+<g transform="translate(205 40)">
+  <path d="M0 6H23" class="muted" stroke-width="1.2" stroke-dasharray="5 5"/><text x="31" y="9" class="txt">reference</text>
+  <path d="M0 22H23" class="blue" stroke-width="1.8"/><text x="31" y="25" class="txt">estimated</text>
+</g>
+
+<path d="M82 342H562" class="soft" stroke-width="1.1" opacity=".85"/>
+</svg>
