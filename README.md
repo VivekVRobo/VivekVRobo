@@ -140,19 +140,21 @@ The emphasis is on technologies used in implemented systems, not an exhaustive l
 
 ---
 
-## Research / Systems Interests
+## Research Directions
 
-`ROS 2` · `SLAM` · `Localization` · `Controls` · `Embedded Robotics` · `Computer Vision` · `Sensor Fusion` · `Physical AI` · `Autonomous Agents` · `Reliable Systems`
+**State Estimation & SLAM**  
+Localization, loop closure, trajectory evaluation, and reproducible benchmarking.
 
----
+**Robot Manipulation & Control**  
+Calibration, teleoperation, bounded motion, endpoint accuracy, and repeatability.
 
-## GitHub Activity
+**Embedded Autonomy**  
+Sensor fusion, RF control, actuator safety, and hardware backed verification.
 
-<p align="center">
-  <img src="https://ghchart.rshah.org/6F90A8/VivekVRobo" alt="VivekVRobo GitHub contribution activity" width="92%" />
-</p>
+**Reliable Autonomous Systems**  
+Authority, recovery, verification, durable execution, and evidence based completion.
 
-The activity graph is secondary to the engineering evidence above. Projects, accepted upstream work, tests, measurements, and real hardware remain the primary signals.
+[**Repositories →**](https://github.com/VivekVRobo?tab=repositories) · [**Contribution history →**](https://github.com/VivekVRobo?tab=overview&from=2026-01-01&to=2026-12-31) · [**Merged FusionCore PR #96 →**](https://github.com/manankharwar/fusioncore/pull/96)
 
 ---
 
