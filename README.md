@@ -90,42 +90,40 @@ Three systems, one standard: **implementation, measurable evidence, and explicit
 
 ---
 
-## Evidence Board
+## Proof Ledger
 
-I keep technical claims at the same level as the evidence behind them.
+A compact view of what is **verified now** and what is still explicitly gated.
 
-| System | Evidence | Status |
-| --- | --- | :---: |
-| **Robotic Arm** | Physical actuation and bench evidence | ✅ Verified |
-| **ROS 2 SLAM** | Build, regression and evaluation infrastructure | ✅ Verified |
-| **SLAM runtime benchmark** | Gazebo ground truth ATE / RPE evidence bundle | ◐ In progress |
-| **3DOF IK** | Analytic FK / IK and numerical validation | ✅ Verified |
-| **PCB design** | CAD, electrical and thermal engineering evidence | ✅ Verified |
-| **PCB hardware** | Fabricated bench validation | ◐ Pending |
-| **HTTP Server** | Linux and Windows CI | ✅ Verified |
-| **Universal Brain** | Automated tests and engineering checkpoints | ✅ Verified |
-| **Universal Brain endurance** | Target machine long duration evidence | ◐ In progress |
+| System | Current proof | Boundary |
+| --- | --- | --- |
+| **Robotic Arm** | Physical actuation, hardware bench, firmware tests ✅ | Latency and repeatability still need measurement |
+| **ROS 2 SLAM** | Package contracts, evaluation and benchmark tooling ✅ | Runtime ATE / RPE evidence still pending |
+| **Universal Brain** | V5.3 verification record and cross platform validation harness ✅ | Windows / WSL2 target endurance still pending |
+| **Open Source** | FusionCore PR #96 merged upstream ✅ | New entries only after upstream acceptance |
 
 ---
 
 ## Open Source
 
-### FusionCore · External Contribution · MERGED ✅
+### FusionCore · PR #96 · Merged Upstream ✅
 
-**GNSS TF / frame validation**
+**ROS 2 GNSS frame resolution and TF validation**
 
-✓ corrected frame resolution behavior  
-✓ updated lever arm lookup logic  
-✓ added focused regression coverage  
-✓ reviewed and merged upstream
+I fixed a real frame mismatch in FusionCore where GNSS validation could assume `gnss_link` even when a driver published another frame such as `gps`.
 
-[**View PR #96 →**](https://github.com/manankharwar/fusioncore/pull/96)
+**What changed**
 
-### Upstream Contributions
+- added configurable `gnss.frame_id` support
+- resolved the active GNSS frame as **configured override → message header → `gnss_link` fallback**
+- used the resolved frame for TF validation and NavSatFix lever arm lookup
+- added focused regression coverage for override, message, and fallback precedence
+- kept the change scoped to the reported GNSS frame issue
 
-`01` **FusionCore** · MERGED
+**Upstream result:** merged **September 8, 2026** · 5 files changed · accepted into the original FusionCore repository
 
-Future entries will be added only when they are genuinely accepted upstream.
+[**View merged PR #96 →**](https://github.com/manankharwar/fusioncore/pull/96) · [**Original issue #81 →**](https://github.com/manankharwar/fusioncore/issues/81) · [**FusionCore repository →**](https://github.com/manankharwar/fusioncore)
+
+> Future contributions appear here only after they are accepted upstream.
 
 ---
 
