@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">ROS 2 SLAM benchmark pipeline</title>
+<desc id="d">Evidence-first ROS 2 SLAM benchmark architecture with Gazebo ground truth, LiDAR, slam_toolbox, trajectory recording, ATE, RPE and loop closure evaluation. Runtime benchmark evidence remains pending.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F4F0E8"/><stop offset="1" stop-color="#E7EEF1"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF" stop-opacity=".92"/><stop offset="1" stop-color="#EEF3F5" stop-opacity=".92"/></linearGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#6F90A8" stroke-opacity=".10"/></pattern>
+  <filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#132436" flood-opacity=".10"/></filter>
+</defs>
+<rect width="1200" height="675" rx="30" fill="url(#bg)"/>
+<rect width="1200" height="675" rx="30" fill="url(#grid)"/>
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+  <text x="62" y="72" font-size="18" font-weight="700" letter-spacing="3.5" fill="#607582">ROS 2 · GAZEBO · LiDAR · GROUND TRUTH</text>
+  <text x="62" y="126" font-size="44" font-weight="800" fill="#132436">SLAM Benchmark Pipeline</text>
+  <text x="62" y="160" font-size="21" fill="#425866">Measure the trajectory, not just the screenshot.</text>
+
+  <g transform="translate(62 205)" filter="url(#shadow)">
+    <rect width="1076" height="330" rx="22" fill="url(#panel)" stroke="#B7C7CE"/>
+
+    <g fill="#203540" font-size="17" font-weight="700" text-anchor="middle">
+      <g transform="translate(55 52)">
+        <rect width="150" height="74" rx="16" fill="#E8EFF2" stroke="#8CA3AE"/>
+        <text x="75" y="30">/cmd_vel</text><text x="75" y="54" font-size="13" font-weight="500" fill="#5A707C">benchmark driver</text>
+      </g>
+      <g transform="translate(245 52)">
+        <rect width="150" height="74" rx="16" fill="#DDE8ED" stroke="#7894A1"/>
+        <text x="75" y="30">Gazebo</text><text x="75" y="54" font-size="13" font-weight="500" fill="#5A707C">DiffDrive + world</text>
+      </g>
+      <g transform="translate(435 24)">
+        <rect width="150" height="74" rx="16" fill="#E8EFF2" stroke="#8CA3AE"/>
+        <text x="75" y="30">Wheel Odom</text><text x="75" y="54" font-size="13" font-weight="500" fill="#5A707C">/odom</text>
+      </g>
+      <g transform="translate(435 112)">
+        <rect width="150" height="74" rx="16" fill="#E8EFF2" stroke="#8CA3AE"/>
+        <text x="75" y="30">360° LiDAR</text><text x="75" y="54" font-size="13" font-weight="500" fill="#5A707C">/scan</text>
+      </g>
+      <g transform="translate(435 200)">
+        <rect width="150" height="74" rx="16" fill="#E3ECE6" stroke="#7B9985"/>
+        <text x="75" y="30">Ground Truth</text><text x="75" y="54" font-size="13" font-weight="500" fill="#5F7667">world pose</text>
+      </g>
+      <g transform="translate(650 68)">
+        <rect width="160" height="92" rx="18" fill="#D8E7EE" stroke="#66889A" stroke-width="2"/>
+        <text x="80" y="36">slam_toolbox</text><text x="80" y="64" font-size="13" font-weight="500" fill="#506B79">map + map→odom</text>
+      </g>
+      <g transform="translate(650 202)">
+        <rect width="160" height="72" rx="16" fill="#E8EFF2" stroke="#8CA3AE"/>
+        <text x="80" y="29">Recorder</text><text x="80" y="52" font-size="13" font-weight="500" fill="#5A707C">estimate + reference</text>
+      </g>
+      <g transform="translate(865 120)">
+        <rect width="160" height="106" rx="18" fill="#F2E7D9" stroke="#B78555" stroke-width="2"/>
+        <text x="80" y="30">Metrics</text>
+        <text x="80" y="57" font-size="14" font-weight="650" fill="#79583D">ATE · RPE</text>
+        <text x="80" y="80" font-size="14" font-weight="650" fill="#79583D">Loop Error</text>
+      </g>
+    </g>
+
+    <g fill="none" stroke="#6F8793" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M205 89H245"/><path d="M395 89H420V61H435"/><path d="M395 89H420V149H435"/>
+      <path d="M585 61H620V112H650"/><path d="M585 149H620V112H650"/>
+      <path d="M730 160V202"/><path d="M585 237H650"/><path d="M810 238H840V173H865"/>
+    </g>
+    <g fill="#6F8793">
+      <path d="M242 84l10 5-10 5z"/><path d="M432 56l10 5-10 5z"/><path d="M432 144l10 5-10 5z"/>
+      <path d="M647 107l10 5-10 5z"/><path d="M647 233l10 5-10 5z"/><path d="M860 168l10 5-10 5z"/>
+      <path d="M725 198l5 10 5-10z"/>
+    </g>
+  </g>
+
+  <g transform="translate(62 568)">
+    <rect width="1076" height="54" rx="15" fill="#263C48"/>
+    <circle cx="29" cy="27" r="8" fill="#C89A62"/>
+    <text x="51" y="34" font-size="16" font-weight="700" fill="#F4F0E8">RUNTIME EVIDENCE GATE PENDING</text>
+    <text x="357" y="34" font-size="15" fill="#C9D5DA">Software contracts + ROS package build verified · Published ATE/RPE withheld until benchmark bundle passes</text>
+  </g>
+</g>
+</svg>
