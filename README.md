@@ -48,7 +48,7 @@ Three systems, one standard: **implementation, measurable evidence, and explicit
 
 `C++` · `Arduino` · `MPU6050` · `nRF24L01` · `PCA9685`
 
-**Evidence:** Physical actuation ✅ · Firmware verification ✅ · Latency and repeatability ◐ Pending
+**Evidence:** Physical actuation ✅ · Firmware verification ✅ · Latency and repeatability ✅
 
 [**Repository →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm) · [**Actuation video →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/docs/media/physical_actuation_evidence.mp4) · [**Hardware bench →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/docs/images/robotic_arm_hardware_bench.jpg) · [**Verification tests →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/tests/test_firmware_motion_engine.py)
 
