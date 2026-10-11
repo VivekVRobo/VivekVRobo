@@ -10,7 +10,7 @@ Focused on **SLAM, robotic manipulation, embedded autonomy, and reliable autonom
 
 **Evidence over hype.**
 
-[**Portfolio**](https://vivek-vala-portfolio.vercel.app/) · [**Contact**](https://vivek-vala-portfolio.vercel.app/#contact) · [**Open Source**](https://github.com/manankharwar/fusioncore/pull/96)
+[**Portfolio**](https://vivek-vala-portfolio.vercel.app/) · [**Contact**](https://vivek-vala-portfolio.vercel.app/#contact) · [**Open Source**](#open-source)
 
 <br clear="right" />
 
@@ -99,7 +99,7 @@ A compact view of what is **verified now** and what is still explicitly gated.
 | **Robotic Arm** | Physical actuation, hardware bench, firmware tests ✅ | Latency and repeatability still need measurement |
 | **ROS 2 SLAM** | Package contracts, evaluation and benchmark tooling ✅ | Runtime ATE / RPE evidence still pending |
 | **Universal Brain** | V5.3 verification record and cross platform validation harness ✅ | Windows / WSL2 target endurance still pending |
-| **Open Source** | FusionCore PR #96 merged upstream ✅ | New entries only after upstream acceptance |
+| **Open Source** | FusionCore #96 and Prefect #23352 merged upstream ✅ | Other PRs remain pending maintainer review |
 
 ---
 
@@ -122,6 +122,16 @@ I fixed a real frame mismatch in FusionCore where GNSS validation could assume `
 **Upstream result:** merged **September 8, 2026** · 5 files changed · accepted into the original FusionCore repository
 
 [**View merged PR #96 →**](https://github.com/manankharwar/fusioncore/pull/96) · [**Original issue #81 →**](https://github.com/manankharwar/fusioncore/issues/81) · [**FusionCore repository →**](https://github.com/manankharwar/fusioncore)
+
+### Prefect · PR #23352 · Merged Upstream ✅
+
+**Flow-run activity chart navigation**
+
+Fixed the production flow-run activity chart so populated bars provide native, accessible links to the corresponding flow runs. Empty bars remain non-interactive, and regression tests cover click and keyboard navigation without conflicting parent-row behavior.
+
+**Upstream result:** merged **October 9, 2026 (UTC)** after maintainer approval and successful UI checks.
+
+[**View merged PR #23352 →**](https://github.com/PrefectHQ/prefect/pull/23352) · [**Prefect repository →**](https://github.com/PrefectHQ/prefect)
 
 > Future contributions appear here only after they are accepted upstream.
 
@@ -154,7 +164,7 @@ Sensor fusion, RF control, actuator safety, and hardware backed verification.
 **Reliable Autonomous Systems**  
 Authority, recovery, verification, durable execution, and evidence based completion.
 
-[**Repositories →**](https://github.com/VivekVRobo?tab=repositories) · [**Contribution history →**](https://github.com/VivekVRobo?tab=overview&from=2026-01-01&to=2026-12-31) · [**Merged FusionCore PR #96 →**](https://github.com/manankharwar/fusioncore/pull/96)
+[**Repositories →**](https://github.com/VivekVRobo?tab=repositories) · [**Contribution history →**](https://github.com/VivekVRobo?tab=overview&from=2026-01-01&to=2026-12-31) · [**Merged FusionCore #96 →**](https://github.com/manankharwar/fusioncore/pull/96) · [**Merged Prefect #23352 →**](https://github.com/PrefectHQ/prefect/pull/23352)
 
 ---
 
