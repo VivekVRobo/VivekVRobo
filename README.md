@@ -66,9 +66,9 @@ Three systems, one standard: **implementation, measurable evidence, and explicit
 
 `ROS 2` · `Gazebo` · `LiDAR` · `SLAM Toolbox` · `ATE` · `RPE`
 
-**Evidence:** Package and CI contracts ✅ · Benchmark tooling ✅ · Published runtime ATE / RPE ◐ Pending
+**Evidence:** Package and CI contracts ✅ · [Verified Gazebo simulation metrics ✅](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/evidence/reports/gazebo-2026-09-17-ec9ceb2e.md) · Replay and hardware validation ◐ Pending
 
-[**Repository →**](https://github.com/VivekVRobo/slam-robot-ros2) · [**Benchmark runbook →**](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/docs/BENCHMARK_EVIDENCE_RUNBOOK.md) · [**Trajectory evaluator →**](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/tools/trajectory_metrics.py) · [**Release gate →**](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/docs/RELEASE_READINESS.md)
+[**Repository →**](https://github.com/VivekVRobo/slam-robot-ros2) · [**Measured Gazebo evidence →**](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/evidence/reports/gazebo-2026-09-17-ec9ceb2e.md) · [**Benchmark runbook →**](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/docs/BENCHMARK_EVIDENCE_RUNBOOK.md) · [**Trajectory evaluator →**](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/tools/trajectory_metrics.py) · [**Release gate →**](https://github.com/VivekVRobo/slam-robot-ros2/blob/main/docs/RELEASE_READINESS.md)
 
 ---
 
@@ -97,7 +97,7 @@ A compact view of what is **verified now** and what is still explicitly gated.
 | System | Current proof | Boundary |
 | --- | --- | --- |
 | **Robotic Arm** | Physical actuation, hardware bench, firmware tests ✅ | Latency and repeatability still need measurement |
-| **ROS 2 SLAM** | Package contracts, evaluation and benchmark tooling ✅ | Runtime ATE / RPE evidence still pending |
+| **ROS 2 SLAM** | Successful Gazebo benchmark and archived ATE/RPE results ✅ | Rosbag replay, current-main reproduction and hardware pending |
 | **Universal Brain** | V5.3 verification record and cross platform validation harness ✅ | Windows / WSL2 target endurance still pending |
 | **Open Source** | FusionCore #96 and Prefect #23352 merged upstream ✅ | Other PRs remain pending maintainer review |
 
