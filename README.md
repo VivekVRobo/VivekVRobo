@@ -48,7 +48,7 @@ Three systems, one standard: **implementation, measurable evidence, and explicit
 
 `C++` · `Arduino` · `MPU6050` · `nRF24L01` · `PCA9685`
 
-**Evidence:** Physical actuation ✅ · Firmware verification ✅ · Latency and repeatability ✅
+**Evidence:** Physical actuation ✅ · Firmware verification ✅ · Latency and repeatability ◐ Pending measurement
 
 [**Repository →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm) · [**Actuation video →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/docs/media/physical_actuation_evidence.mp4) · [**Hardware bench →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/docs/images/robotic_arm_hardware_bench.jpg) · [**Verification tests →**](https://github.com/VivekVRobo/gesture-controlled-robotic-arm/blob/main/tests/test_firmware_motion_engine.py)
 
@@ -96,7 +96,7 @@ A compact view of what is **verified now** and what is still explicitly gated.
 
 | System | Current proof | Boundary |
 | --- | --- | --- |
-| **Robotic Arm** | Physical actuation, hardware bench, firmware tests ✅ | Latency and repeatability still need measurement |
+| **Robotic Arm** | Physical actuation, hardware bench, firmware tests ✅ | Quantitative latency and physical repeatability measurements pending |
 | **ROS 2 SLAM** | Successful Gazebo benchmark and archived ATE/RPE results ✅ | Rosbag replay, current-main reproduction and hardware pending |
 | **Universal Brain** | V5.3 verification record and cross platform validation harness ✅ | Windows / WSL2 target endurance still pending |
 | **Open Source** | FusionCore #96 and Prefect #23352 merged upstream ✅ | Other PRs remain pending maintainer review |
