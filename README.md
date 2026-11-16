@@ -135,6 +135,15 @@ Fixed the production flow-run activity chart so populated bars provide native, a
 
 > Future contributions appear here only after they are accepted upstream.
 
+### Active upstream work
+
+The current open-source work is deliberately separated from merged results:
+
+- **MoveIt 2 · PR #8** — open and mergeable; the forked contribution is awaiting its first CI result and substantive maintainer review. No acceptance is claimed yet.
+- **Nav2 · Route Server issue #5082, item 5** — dynamic parameter handling was discussed with the maintainer and scoped to safe runtime-updatable parameters, validation, mutex protection around active route requests, and focused tests. An upstream PR has not been opened yet.
+
+This profile only upgrades a contribution from **active** to **accepted** after the upstream repository records the merge.
+
 ---
 
 ## Engineering Stack
